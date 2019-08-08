@@ -1,6 +1,9 @@
 #hari  04 kamis 
+
 ##collection = untuk menyimpan data, dibagi jadi 4 
+
 ##di dart di pakai 3
+
 *1.List
 kumpulan data tipenya sama (array), tertaur , diakses dengan nomor indeksnya(indeks dimulai dari 0) 
 dekalrai [] 
