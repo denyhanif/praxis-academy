@@ -35,5 +35,8 @@ outputnya
 
 
 
-2.
-3.
+*2.MAP 
+menngunnakan kata kunci 
+perbedaa dengan list yaitu: map tidak untuk  data yng berurutan
+map menngunakn{}
+*3.SET mirip list set tidak memiliki urutan, datanya bersifat unik
