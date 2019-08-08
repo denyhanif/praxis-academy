@@ -18,11 +18,11 @@ main() {
   iOb.showType();
 
   int v = iOb.getob();
-  print("value +${v}");
+  print("value ${v}");
 
   GenericClass<String> strOb = new GenericClass<String>("Generic Test");
   strOb.showType();
 
   String str = strOb.getob();
-  print("value +${str}");
+  print("value ${str}");
 }
