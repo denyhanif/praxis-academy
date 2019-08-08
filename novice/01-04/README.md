@@ -1,7 +1,7 @@
 #hari  04 kamis 
 
-##collection = untuk menyimpan data, dibagi jadi 4 
-
+##collection = untuk menyimpan data, dibagi jadi 4 (list map set queue)
+data di mbpan dalam bentuk array
 ##di dart di pakai 3
 
 *1.List
@@ -18,28 +18,44 @@ dua tipe yaitu fix(tgdk bisa diubah) dan growable(dinamis)
 }
 ```
 
-outputnya 
-bantul
-sleman
-paris
-
-```main() {
-  List<String> Kota = ["bantul", "sleman", "paris"];
-  for (String namaKota in Kota) {
-    //string nama kota untuk print isi dalam bentuk String dari kota
-    print(Kota);
-  }
-}```
-
-outputnya
-[bantul, sleman, paris]
-[bantul, sleman, paris]
-[bantul, sleman, paris]
-
-
-
 *2.MAP 
 menngunnakan kata kunci 
 perbedaa dengan list yaitu: map tidak untuk  data yng berurutan
 map menngunakn{}
 *3.SET mirip list set tidak memiliki urutan, datanya bersifat unik
+
+
+#Generic
+ra usable variabel
+bisa menyipan berbeda tipe data
+
+Pemrograman generik  adalah gaya  pemrograman komputer  di mana  algoritma  ditulis dalam bentuk  tipe yang  akan ditentukan yang kemudian  dipakai  saat dibutuhkan untuk jenis tertentu yang disediakan sebagai  parameter .generic programming memungkinkan penulisan fungsi  atau  tipe  data berbeda dalam rangkaian tipe yang mereka operasikan saat digunakan, sehingga mengurangi  duplikasi .
+
+
+ ##contoh sintaks class
+```
+ class GenericStack<T>;
+{
+  private stack: T[]; 
+  function pushItem(item: T) { 
+  this.stack.push(item); 
+  }
+}
+```
+##contoh sintaks untuk tipedata
+```var numberStack = GenericStack<Number>(); 
+var stringStack = GenericStack<String>(); 
+var aString = "A String"; 
+var aNumber = 100; 
+var aPerson = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+// These will pass the typescript compiler
+stringStack.pushItem(aString); 
+numberStack.pushItem(aNumber);
+
+// But these would all fail.
+numberStack.pushItem(aPerson);
+numberStack.pushItem(aString);
+stringStack.pushItem(aPerson);
+stringStack.pushItem(aNumber);
+```
