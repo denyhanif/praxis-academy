@@ -1,10 +1,15 @@
-#hari  04 kamis 
+##hari  04 kamis 
 
-##collection = untuk menyimpan data, dibagi jadi 4 (list map set queue)
-data di mbpan dalam bentuk array
-##di dart di pakai 3
+#collection 
+untuk menyimpan data,data disimpan dalam bentuk array 
+collection dibagi jadi 4 
+    *list 
+    *map 
+    *set 
+    *queue
+di dart di pakai 3
 
-*1.List
+##1.List
 kumpulan data tipenya sama (array), tertaur , diakses dengan nomor indeksnya(indeks dimulai dari 0) 
 dekalrai [] 
 dua tipe yaitu fix(tgdk bisa diubah) dan growable(dinamis)
@@ -18,14 +23,14 @@ dua tipe yaitu fix(tgdk bisa diubah) dan growable(dinamis)
 }
 ```
 
-*2.MAP 
+##2.MAP 
 menngunnakan kata kunci 
 perbedaa dengan list yaitu: map tidak untuk  data yng berurutan
 map menngunakn{}
-*3.SET mirip list set tidak memiliki urutan, datanya bersifat unik
+3.SET mirip list set tidak memiliki urutan, datanya bersifat unik
 
 
-#Generic
+##Generic
 ra usable variabel
 bisa menyipan berbeda tipe data
 
