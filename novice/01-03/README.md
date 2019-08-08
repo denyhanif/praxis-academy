@@ -1,7 +1,7 @@
 standup meeting pagi = #KOMUNIKASI
 
 
-### Pembahasan
+### Pembahasannn
 
 1. Pengertian OOP dan pola pikir obyek
 
