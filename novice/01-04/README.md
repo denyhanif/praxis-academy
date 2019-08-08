@@ -9,7 +9,8 @@ collection dibagi jadi 4
     *queue
 di dart di pakai 3
 
-1.List
+### 1.List
+
 kumpulan data tipenya sama (array), tertaur , diakses dengan nomor indeksnya(indeks dimulai dari 0) 
 dekalrai [] 
 dua tipe yaitu fix(tgdk bisa diubah) dan growable(dinamis)
@@ -24,14 +25,19 @@ main() {
 }
 ```
 
-2.MAP 
-menngunnakan kata kunci 
-perbedaa dengan list yaitu: map tidak untuk  data yng berurutan
-map menngunakn{}
-3.SET mirip list set tidak memiliki urutan, datanya bersifat unik
+### 2.MAP 
+
+menggunnakan kata kunci contoh ["sekolah":"praxis"] 
+perbedaa dengan list yaitu: map tidak untuk data yng berurutan
+dekalarsi map menggunakan {}
 
 
-4.Generic
+### 3.SET 
+
+mirip list set tidak memiliki urutan, datanya bersifat unik
+
+
+### 4.Generic
 ra usable variabel
 bisa menyipan berbeda tipe data
 
