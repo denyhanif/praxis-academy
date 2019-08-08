@@ -1,6 +1,6 @@
 # hari  04 kamis 
 
-# collection 
+### collection 
 untuk menyimpan data,data disimpan dalam bentuk array 
 collection dibagi jadi 4 
     *list 
