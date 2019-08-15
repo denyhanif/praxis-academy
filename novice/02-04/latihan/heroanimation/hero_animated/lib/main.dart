@@ -1,15 +1,4 @@
 
-// Copyright 2017 The Chromium Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that
-// can be found in the LICENSE file.
-
-// A "radial transformation" as defined here:
-// https://material.io/guidelines/motion/transforming-material.html#transforming-material-radial-transformation
-
-// In this example, the destination route (which completely obscures
-// the source route once the page transition has finished),
-// displays the Hero image in a Card containing a column of two
-// widgets: the image, and some descriptive text.
 
 import 'dart:math' as math;
 
@@ -25,7 +14,6 @@ class Photo extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return Material(
-      // Slightly opaque color appears where the image has transparency.
       color: Theme.of(context).primaryColor.withOpacity(0.25),
       child: InkWell(
         onTap: onTap,
@@ -79,12 +67,14 @@ class RadialExpansionDemo extends StatelessWidget {
     return MaterialRectCenterArcTween(begin: begin, end: end);
   }
 
+
+  //page saat pop
   static Widget _buildPage(BuildContext context, String imageName, String description) {
     return Container(
       color: Theme.of(context).canvasColor,
       child: Center(
         child: Card(
-          elevation: 8.0,
+          elevation: 10.0,
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -108,9 +98,9 @@ class RadialExpansionDemo extends StatelessWidget {
               Text(
                 description,
                 style: TextStyle(fontWeight: FontWeight.bold),
-                textScaleFactor: 3.0,
+                textScaleFactor: 7.0,
               ),
-              const SizedBox(height: 16.0),
+              const SizedBox(height: 18.0),
             ],
           ),
         ),
@@ -166,11 +156,9 @@ class RadialExpansionDemo extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            _buildHero(context, 'gambar/index.jpg', 'Chair'),
+            _buildHero(context, 'gambar/index.jpeg', 'Chair'),
             _buildHero(context, 'images/binoculars-alpha.png', 'Binoculars'),
-            
-            
-            
+            _buildHero(context, 'images/beachball-alpha.png', 'Beach ball'),
           ],
         ),
       ),
