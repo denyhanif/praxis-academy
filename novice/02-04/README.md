@@ -1,4 +1,4 @@
-## APLIKASI 
+## ANIMASI
 
-Hero == naimasi yang sifatnya bergerak
-staged
+Hero Animation
+Staged Animation
