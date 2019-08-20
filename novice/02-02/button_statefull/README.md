@@ -4,13 +4,58 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+## Button Statefull Widget 
 
-A few resources to get you started if this is your first Flutter project:
+1.Membuat kelas AwesomeButton menggunakan StatefulWidget
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```dart
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+class AwesomeButton extends StatefulWidget{
+  @override
+  AwesomeButtonState createState()=> new AwesomeButtonState();
+}
+
+class AwesomeButtonState extends State<AwesomeButton>{
+  int counter = 0;
+  List<String> strings = ["Flutter","Is","Awesome"];
+  String displayedString = "";
+
+  @override
+ Widget build(BuildContext context) {
+   return new Scaffold(
+     appBar: new AppBar(title: new Text("Tes Statefull WIdget"),backgroundColor: Colors.deepPurple),
+     body: new Container(
+
+       child: new Center(
+         child: new Column(
+           mainAxisAlignment: MainAxisAlignment.center,
+           children: <Widget>[
+             new Text(displayedString, style:new TextStyle(fontSize: 30.0, fontWeight:FontWeight.bold)),
+             new Padding(padding: new EdgeInsets.all(15.0)),
+             new RaisedButton(
+               child: new Text("Press me!", style: new TextStyle(color: Colors.white, fontStyle: FontStyle.italic,fontSize: 20.0)),
+               color: Colors.green,
+               onPressed: onPressed
+                           
+            )
+           ],
+         ),
+       ),
+     ),
+   );
+ }
+}
+ 
+```
+
+2.Menambahkan fungsi ``onPressed()`` untuk menampilkan isi dari varibel String ketika widget ``RaisedButton()`` di tap
+```dart
+ void onPressed(){
+    setState(() {
+      displayedString = strings[counter];
+      counter = counter < 2 ? counter+1 : 0;
+    });
+  }
+  ```
+
+  output:

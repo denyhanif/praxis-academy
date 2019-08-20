@@ -4,13 +4,82 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+1.kelas ``HomePage()`` menggunakan StatelessWidget 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```dart
+class HomePage extends StatelessWidget{
+  @override
+  
+  Widget build(BuildContext context) {
+    return new Scaffold(
+      appBar: new AppBar(title: new Text("Halaman Utama"),backgroundColor: Colors.deepOrangeAccent,),
+      body: new Container(
+        child: new Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              new IconButton(
+                icon: new Icon(Icons.favorite, color: Colors.red),
+                iconSize: 70.0,
+                onPressed: (){
+                  Navigator.of(context).pushNamed("/SecondPage");}
+              ),
+              new Text("Home")
+            ],
+          ),
+        ),
+      ),
+    );//Scafold
+  }
+}
+```
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+Menggunkan anonymous method ``onPressed:`` pada widget ``IconButton()`` untuk pindah ke halaman SecondaPage
+
+```dart
+new IconButton(
+                icon: new Icon(Icons.favorite, color: Colors.red),
+                iconSize: 70.0,
+                onPressed: (){
+                  Navigator.of(context).pushNamed("/SecondPage");}
+              ),
+
+```
+
+2.Membuat kelas ``SecondPage()`` menggunkan StatelessWidget
+
+```dart
+class SecondPage extends StatelessWidget{
+
+  @override
+  Widget build(BuildContext context) {
+    return new Scaffold(
+      appBar: new AppBar(title: new Text("Second Page"),backgroundColor: Colors.deepOrange),
+      body: new Container(
+
+        child: new Center(
+          child: new Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              new IconButton(
+                icon: new Icon(Icons.home, color: Colors.indigo),
+                iconSize: 70.0,
+                onPressed: null,
+              ),
+              new Text("Second Page")
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+```
+output:
+
+
+
+
+
+

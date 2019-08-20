@@ -2,13 +2,12 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(new MyApp());
 
-
-
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var routes = <String, WidgetBuilder>{
-      MyItemsPage.routeName: (BuildContext context) => new MyItemsPage(title: "MyItemsPage"),
+      MyItemsPage.routeName: (BuildContext context) =>
+          new MyItemsPage(title: "MyItemsPage"),
     };
     return new MaterialApp(
       title: 'Flutter Demo',
@@ -20,6 +19,9 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
@@ -36,20 +38,17 @@ class _MyHomePageState extends State<MyHomePage> {
   void _incrementCounter() {
     Navigator.pushNamed(context, MyItemsPage.routeName);
   }
-
+  //home
   @override
   Widget build(BuildContext context) {
-    var button = new IconButton(icon: new Icon(Icons.access_alarm), onPressed: _onButtonPressed);
+    var button = new IconButton(
+        icon: new Icon(Icons.access_alarm), onPressed: _onButtonPressed);
     return new Scaffold(
       appBar: new AppBar(
         title: new Text(widget.title),
       ),
       body: new Column(
-        children: <Widget>[
-          new Text('Dog'),
-          new Text('Cat'),
-          button
-        ],
+        children: <Widget>[new Text('Dog'), new Text('Cat'), button],
       ),
       floatingActionButton: new FloatingActionButton(
         onPressed: _incrementCounter,
@@ -87,18 +86,15 @@ class MyItemsPage extends StatefulWidget {
 class _MyItemsPageState extends State<MyItemsPage> {
   @override
   Widget build(BuildContext context) {
-    var button = new IconButton(icon: new Icon(Icons.arrow_back), onPressed: _onButtonPressed);
+    var button = new IconButton(
+        icon: new Icon(Icons.arrow_back), onPressed: _onButtonPressed);
     return new Scaffold(
       appBar: new AppBar(
         title: new Text(widget.title),
       ),
       body: new Container(
         child: new Column(
-          children: <Widget>[
-            new Text('Item1'),
-            new Text('Item2'),
-            button
-          ],
+          children: <Widget>[new Text('Item1'), new Text('Item2'), button],
         ),
       ),
       floatingActionButton: new FloatingActionButton(
@@ -109,11 +105,9 @@ class _MyItemsPageState extends State<MyItemsPage> {
     );
   }
 
-  void _onFloatingActionButtonPressed() {
-  }
+  void _onFloatingActionButtonPressed() {}
 
   void _onButtonPressed() {
     Navigator.pop(context);
   }
 }
-
