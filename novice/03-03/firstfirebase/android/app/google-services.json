@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "954895845154",
+    "firebase_url": "https://firstproject-471ab.firebaseio.com",
+    "project_id": "firstproject-471ab",
+    "storage_bucket": "firstproject-471ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954895845154:android:86587b8a670e01f8",
+        "android_client_info": {
+          "package_name": "com.example.firstfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "954895845154-lb02acth06ltbgo6psg7ch2vsm2oc9gs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJy1ju8_H-cyO2Y0EE4Dh1P33nLMAlNrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "954895845154-lb02acth06ltbgo6psg7ch2vsm2oc9gs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954895845154:android:3ea95af854ab37ac",
+        "android_client_info": {
+          "package_name": "deny.praxis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "954895845154-lb02acth06ltbgo6psg7ch2vsm2oc9gs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJy1ju8_H-cyO2Y0EE4Dh1P33nLMAlNrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "954895845154-lb02acth06ltbgo6psg7ch2vsm2oc9gs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
