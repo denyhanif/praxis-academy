@@ -67,11 +67,9 @@ _buatlist() async {
 
 @override
 void initState() {
-  _buatlist();
-  
+    _buatlist();
+    super.initState();
   }
-
-
 
 class _HomeState extends State<Home> {
   @override
