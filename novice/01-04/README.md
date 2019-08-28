@@ -38,7 +38,7 @@ mirip list set tidak memiliki urutan, datanya bersifat unik
 
 
 ### 4.Generic
-ra usable variabel
+reusable variabel
 bisa menyipan berbeda tipe data
 
 Pemrograman generik  adalah gaya  pemrograman komputer  di mana  algoritma  ditulis dalam bentuk  tipe yang  akan ditentukan yang kemudian  dipakai  saat dibutuhkan untuk jenis tertentu yang disediakan sebagai  parameter .generic programming memungkinkan penulisan fungsi  atau  tipe  data berbeda dalam rangkaian tipe yang mereka operasikan saat digunakan, sehingga mengurangi  duplikasi .
