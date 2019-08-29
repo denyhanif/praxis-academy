@@ -1,0 +1,10 @@
+{
+  "person": {
+    "apiUrl": "person_production.json",
+    "name": "Julio",
+    "lastName": "Bitencourt",
+    "github": "github.com/JHBitencourt",
+    "twitter": "@JuliooHB",
+    "website": "juliobitencourt.com"
+  }
+}
