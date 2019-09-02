@@ -159,5 +159,5 @@ Widget _buildRow(WordPair pair) {
 }
  ```
 
-<img src='hasil/list.png'>
-<img src='hasil/saved.png'>
+<img src='startup_namer/hasil/list.png'>
+<img src='startup_namer/hasil/saved.png'>
