@@ -1,4 +1,7 @@
 
+## Sliver
+A sliver is a portion of a scrollable area. You can use slivers to achieve custom scrolling effects.
+
 menambahkan class header
 
 
@@ -35,4 +38,4 @@ class Header extends StatelessWidget {
 }
 ```
 
-<img src='kasus/livers_demystifield/img/kasus.gif' width='200'>
+<img src="kasus/livers_demystified/img/kasus.gif">
