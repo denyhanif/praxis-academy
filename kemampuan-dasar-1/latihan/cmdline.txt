@@ -1,0 +1,167 @@
+deny@HP-Laptop:~$ ls
+Android         Desktop      flutter                                 Public
+android-studio  device_info  google-chrome-stable_current_amd64.deb  Templates
+DEBIAN          Documents    Music                                   usr
+deny            Downloads    Pictures  
+
+deny@HP-Laptop:~$ ls -a
+.                                       .gradle
+..                                      .ICEauthority
+.android                                .icons
+Android                                 .java
+android-studio                          .local
+.AndroidStudio3.5                       .mozilla
+.bash_history                           .mume
+.bash_logout                            Music
+.bashrc                                 Pictures
+.cache                                  .pki
+.config                                 .profile
+.dart                                   .pub-cache
+.dartServer                             Public
+DEBIAN                                  .sudo_as_admin_successful
+deny                                    Templates
+Desktop                                 .themes
+device_info                             usr
+.dmrc                                   Videos
+Documents                               .vscode
+Downloads                               .wine
+.flutter                                .Xauthority
+flutter                                 .Xdefaults
+.fonts                                  .xinputrc
+.gitconfig                              .xscreensaver
+.gnupg                                  .xsession-errors
+google-chrome-stable_current_amd64.deb  .xsession-errors.old
+
+deny@HP-Laptop:~$ cat > praxis
+ini praxis academy
+
+deny@HP-Laptop:~$ ls
+Android         device_info                             Music      usr
+android-studio  Documents                               Pictures   Videos
+DEBIAN          Downloads                               praxis
+deny            flutter                                 Public
+Desktop         google-chrome-stable_current_amd64.deb  Templates
+deny@HP-Laptop:~$ rm praxis
+deny@HP-Laptop:~$ ls
+Android         Desktop      flutter                                 Public
+android-studio  device_info  google-chrome-stable_current_amd64.deb  Templates
+DEBIAN          Documents    Music                                   usr
+deny            Downloads    Pictures                                Videos
+deny@HP-Laptop:~$ 
+
+deny@HP-Laptop:~$ mkdir mypraxis
+deny@HP-Laptop:~$ ls
+Android         device_info                             Music      usr
+android-studio  Documents                               mypraxis   Videos
+DEBIAN          Downloads                               Pictures
+deny            flutter                                 Public
+Desktop         google-chrome-stable_current_amd64.deb  Templates
+
+deny@HP-Laptop:~$ cd mypraxis
+deny@HP-Laptop:~/mypraxis$ mkdir praxis1
+deny@HP-Laptop:~/mypraxis$ mkdir praxis2
+deny@HP-Laptop:~/mypraxis$ rmdir praxis2
+deny@HP-Laptop:~/mypraxis$ ls
+praxis1
+
+deny@HP-Laptop:~/mypraxis$ mv praxis1 lovepraxis
+deny@HP-Laptop:~/mypraxis$ ls
+lovepraxis
+
+
+
+deny@HP-Laptop:~/mypraxis$ man
+What manual page do you want?
+deny@HP-Laptop:~/mypraxis$ man man
+MAN(1)                        Manual pager utils                        MAN(1)
+
+NAME
+       man - an interface to the on-line reference manuals
+
+SYNOPSIS
+       man  [-C  file] [-d] [-D] [--warnings[=warnings]] [-R encoding] [-L lo‐
+       cale] [-m system[,...]] [-M path]  [-S  list]  [-e  extension]  [-i|-I]
+       [--regex|--wildcard]   [--names-only]  [-a]  [-u]  [--no-subpages]  [-P
+       pager] [-r prompt] [-7] [-E encoding] [--no-hyphenation] [--no-justifi‐
+       cation]  [-p  string]  [-t]  [-T[device]]  [-H[browser]] [-X[dpi]] [-Z]
+       [[section] page[.section] ...] ...
+       man -k [apropos options] regexp ...
+       man -K [-w|-W] [-S list] [-i|-I] [--regex] [section] term ...
+       man -f [whatis options] page ...
+       man -l [-C file] [-d] [-D] [--warnings[=warnings]]  [-R  encoding]  [-L
+       locale]  [-P  pager]  [-r  prompt]  [-7] [-E encoding] [-p string] [-t]
+       [-T[device]] [-H[browser]] [-X[dpi]] [-Z] file ...
+       man -w|-W [-C file] [-d] [-D] page ...
+       man -c [-C file] [-d] [-D] page ...
+ Manual page man(1) line 1 (press h for help or q to quit)
+
+deny@HP-Laptop:~/mypraxis$ history
+    1  reboot
+    2  sudo apt-get update
+    3  sudo apt-get upgrade
+    4  reboot
+    5  sudo reboot
+    6  exit
+    7  sudo apt-get update
+    8  sudo apt-get install apt-transport-https
+    9  sudo sh -c 'curl https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -'
+   10  sudo apt-get install curl
+   11  sudo sh -c 'curl https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -'
+   12  sudo apt-get update
+   13  sudo apt-get install dart
+   14  flutter doctor
+   15  nano ~/bash.rc
+   16  nano ~/.bashrc 
+   17  flutter doctor
+   18  reboot 
+   19  flutter doctor
+   20  flutter doctor --android-licenses
+   21  flutter doctor
+   22  sudo dpkg -i
+   23  sudo dpkg -i code_1.37.1-1565886362_amd64.deb 
+   24  chmod +X studio.sh
+   25  ./studio.sh
+   26  flutter doctor
+   27  apt-get install git
+   28  sodo apt-get install git
+   29  sudo apt-get update
+   30  flutter doctor
+   31  sudo apt-get install lib32stdc++6
+   32  flutter doctor
+   33  sudo apt-get install plank
+   34  plank --references
+   35  plank --preferences
+   36  chmod +X install sh
+   37  chmod +X install.sh
+   38  ./install.sh 
+   39  ./install.sh -a
+   40  wine version
+   41  lscpu
+   42  sudo apt install wine64
+   43  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+   44  sudo dpkg -i goole-chrome-stable_current_amd64.deb
+   45  sudo dpkg -i google-chrome-stable_current_amd64.deb
+   46  sudo apt get install telegram-dekstop
+   47  sudo apt install telegram-dekstop
+   48  git clone https://github.com/idrcorner/Flutter-Hero-Animation-Grid-View.git
+   49  git init
+   50  git remote add origin1 https://github.com/denyhanif/praxis-academy.git
+   51  git remote add originn https://github.com/denyhanif/praxis-academy.git
+   52  git clone 
+   53  flutter package get
+   54  flutter packages get
+   55  flutter doctor
+   56  flutter packages get
+   57  flutter pub get
+   58  git clone https://github.com/jblorenzo/flutter-kotlin-native-example.git
+   59  flutter doctor
+   60  sudo apt-get install adb
+   61  flutter doctor
+   62  flutter create --template=package device_info
+   63  flutter create --org com.example --template=plugin device_info
+   64  flutter create --template=package device_info
+   65  flutter create --org com.example --template=plugin device_info
+   66  flutter packages get
+
+
+ 
