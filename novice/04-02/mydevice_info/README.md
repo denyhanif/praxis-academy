@@ -18,7 +18,7 @@ s += "\n Device: " + android.os.Build.DEVICE;
 s += "\n Model (and Product): " + android.os.Build.MODEL + " ("+ android.os.Build.PRODUCT + ")";
 
 ```
-file mydeviceinfo.java
+file mydeviceinfo.java pada folder android/src/main/java/com/example
 
 ```java
 package com.example.mydevice_info;
